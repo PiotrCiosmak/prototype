@@ -3,4 +3,4 @@ project(prototype)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(prototype main.cpp src/shape/Shape.cpp src/shape/Rectangle.cpp src/shape/Circle.cpp)
+add_executable(prototype main.cpp include/Shape.hpp src/Shape.cpp include/Circle.hpp src/Circle.cpp include/Rectangle.hpp src/Rectangle.cpp)

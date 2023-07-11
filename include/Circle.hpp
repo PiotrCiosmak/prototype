@@ -6,9 +6,10 @@ class Circle : public Shape
 {
 public:
     Circle(int x, int y, const std::string& color, int radius);
-    Circle(const Circle& source);
-    Circle* clone() override;
-    std::string toString();
+    Circle(const Circle& source) = default;
+    [[nodiscard]] std::shared_ptr<Shape> clone() override;
+    [[nodiscard]] std::string toString() override;
+
 private:
     int radius;
 };
